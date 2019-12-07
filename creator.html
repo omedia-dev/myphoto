@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <title>PhotoStory | Фотомагниты с вашим изображением</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">		
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
+    <script type="text/javascript">
+        VK.init({
+            apiId: 5771039
+        });
+    </script>
+    <script src="//connect.facebook.net/en_US/all.js"></script>
+    <script>
+        FB.init({
+            appId      : '1885030441718159',
+            xfbml      : true,
+            status     : true,
+            cookie     : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    </script>
+</head>
+<body class="pu-body">
+    <!-- START PRELOADER -->
+    <div class="preloader">
+        <div class="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <!-- START NAVBAR -->
+    <div class="navbar navbar-default navbar-fixed-top menu-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pu-navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand main-logo pu-main-logo"><img src="assets/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav navbar-nav pu-navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="./index.html#home">Главная</a></li>
+                        <li><a class="page-scroll" href="./index.html#service">Сервис</a></li>
+                        <li><a class="page-scroll" href="./index.html#portfolio">Галерея</a></li>
+                        <li><a class="page-scroll" href="./index.html#pricing">Цены</a></li>
+                        <li><a class="page-scroll" href="./index.html#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!--- END CONTAINER -->
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- ЗДЕСЬ ТВОРИТСЯ МАГИЯ РЕАКТА -->
+    <div id="photoUploader"></div>
+    <!-- END ЗДЕСЬ ТВОРИТСЯ МАГИЯ РЕАКТА -->
+
+    <!-- START FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 wow zoomIn">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2016 | Все права защищены.</p>
+                    </div><!--- END FOOTER COPYRIGHT -->
+                </div><!--- END COL -->
+                <div class="col-md-6 col-sm-6 col-xs-12 wow zoomIn">
+                    <div class="footer_social pull-right">
+                        <ul>
+                            <li><a href="https://vk.com/instamagnit" target="_blank"><img width="25" src="assets/img/icons/vk_icon.png"><i></i></a></li>
+                            <li><a href="https://www.instagram.com/insta_magnitic/" target="_blank"><img width="25" src="assets/img/icons/insta.png"><i></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/salvattore.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- modernizer JS -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- WOW - Reveal Animations When You Scroll -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- jquery venobox min js -->
+    <script src="assets/js/venobox.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript" src="assets/js/creator.js"></script>
+
+</body>
+</html>
